@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "texttranslations",
+  "version": "${version}",
+  "name": "Text Translations",
+  "description": "Allow using Texts in translations",
+  authors": [
+    "BasiqueEvangelist"
+  ],
+  "contact": {
+    "sources": "https://github.com/BasiqueEvangelist/TextTranslations",
+    "issues": "https://github.com/BasiqueEvangelist/TextTranslations/issues"
+  },
+  "license": "LGPL-3.0-only",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.basiqueevangelist.texttranslations.fabric.TextTranslationsFabric"
+    ]
+  },
+  "mixins": [
+    "texttranslations-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": ">=1.16.4",
+    "architectury": ">=1.1.55"
+  }
+}

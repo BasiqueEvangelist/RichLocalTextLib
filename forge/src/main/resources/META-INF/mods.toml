@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[35,)"
+issueTrackerURL = "https://github.com/BasiqueEvangelist/TextTranslations/issues"
+license = "LGPL-3.0-only"
+
+[[mods]]
+modId = "texttranslations"
+version = "${version}"
+displayName = "Text Translations"
+authors = "BasiqueEvangelist"
+description = '''
+Allow using Texts in translations
+'''
+#logoFile = ""
+
+[[dependencies.texttranslations]]
+modId = "forge"
+mandatory = true
+versionRange = "[35,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.texttranslations]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.16.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.texttranslations]]
+modId = "architectury"
+mandatory = true
+versionRange = "[1.1.55,)"
+ordering = "AFTER"
+side = "BOTH"

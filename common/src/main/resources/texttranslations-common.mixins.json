@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.basiqueevangelist.texttranslations.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "DefaultLanguageMixin",
+    "LanguageMixin",
+    "TextSerializerMixin",
+    "TranslatableTextMixin",
+    "TranslationStorageMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
