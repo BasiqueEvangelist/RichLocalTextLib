@@ -18,6 +18,10 @@ import java.lang.reflect.Type;
 public abstract class TextSerializerMixin {
     @Shadow public abstract MutableText deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException;
 
+    @Shadow protected abstract void addStyle(Style style, JsonObject json, JsonSerializationContext context);
+
+    @Shadow public abstract JsonElement serialize(Text text, Type type, JsonSerializationContext jsonSerializationContext);
+
     @Inject(method = "deserialize", at = @At(value = "INVOKE", target = "Lcom/google/gson/JsonObject;has(Ljava/lang/String;)Z"), cancellable = true)
     private void deserializeCustomText(JsonElement el, Type type, JsonDeserializationContext ctx, CallbackInfoReturnable<MutableText> cir) {
         JsonObject obj = el.getAsJsonObject();
@@ -39,5 +43,30 @@ public abstract class TextSerializerMixin {
 
             cir.setReturnValue(text);
         }
+    }
+
+    @Inject(method = "serialize", at = @At("HEAD"), cancellable = true)
+    private void serializeCustomText(Text text, Type type, JsonSerializationContext ctx, CallbackInfoReturnable<JsonElement> cir) {
+        if (!(text instanceof InsertingText))
+            return;
+
+        JsonObject obj = new JsonObject();
+
+        obj.addProperty("index", ((InsertingText) text).getIndex());
+
+        if (!text.getStyle().isEmpty()) {
+            addStyle(text.getStyle(), obj, ctx);
+        }
+
+        if (!text.getSiblings().isEmpty()) {
+            JsonArray siblings = new JsonArray();
+            for (Text sibling : text.getSiblings()) {
+                siblings.add(serialize(sibling, sibling.getClass(), ctx));
+            }
+
+            obj.add("extra", siblings);
+        }
+
+        cir.setReturnValue(obj);
     }
 }

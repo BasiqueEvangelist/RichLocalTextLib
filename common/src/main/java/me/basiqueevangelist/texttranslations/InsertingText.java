@@ -19,6 +19,10 @@ public class InsertingText extends BaseText {
         this.index = index;
     }
 
+    public int getIndex() {
+        return index;
+    }
+
     @ApiStatus.Internal
     public static void pushTranslatableText(TranslatableText text) {
         translationStack.get().push(text);
