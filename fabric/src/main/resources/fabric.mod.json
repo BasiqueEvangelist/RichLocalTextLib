@@ -4,7 +4,7 @@
   "version": "${version}",
   "name": "Text Translations",
   "description": "Allow using Texts in translations",
-  authors": [
+  "authors": [
     "BasiqueEvangelist"
   ],
   "contact": {
