@@ -35,6 +35,9 @@ public class InsertingText extends BaseText {
 
     @Override
     public String asString() {
+        if (translationStack.get().peek() == null)
+            return "%" + (index + 1) + "$s";
+
         Object arg = translationStack.get().peek().getArgs()[index];
         if (arg instanceof Text) {
             return ((Text) arg).asString();
