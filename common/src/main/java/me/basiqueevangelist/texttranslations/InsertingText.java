@@ -24,8 +24,16 @@ public class InsertingText extends BaseText {
     }
 
     @ApiStatus.Internal
-    public static void pushTranslatableText(TranslatableText text) {
+    public static boolean pushTranslatableText(TranslatableText text) {
+        for (TranslatableText other : translationStack.get()) {
+            if (other == text) {
+                return false;
+            }
+        }
+
         translationStack.get().push(text);
+
+        return true;
     }
 
     @ApiStatus.Internal
