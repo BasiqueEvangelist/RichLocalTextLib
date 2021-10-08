@@ -16,13 +16,13 @@ import java.util.Map;
 public class DefaultLanguageMixin implements TextLanguage, DefaultLanguageAccess {
     @Unique Map<String, Text> textMap;
 
-    @Inject(method = "hasTranslation", at = @At("HEAD"), cancellable = true)
+    @Inject(method = {"hasTranslation", "method_4678", "func_230506_b_"}, at = @At("HEAD"), cancellable = true)
     private void hasTranslation(String key, CallbackInfoReturnable<Boolean> cir) {
         if (textMap.containsKey(key))
             cir.setReturnValue(true);
     }
 
-    @Inject(method = "get", at = @At("HEAD"), cancellable = true)
+    @Inject(method = {"get", "method_4679", "func_230503_a_"}, at = @At("HEAD"), cancellable = true)
     private void get(String key, CallbackInfoReturnable<String> cir) {
         if (textMap.containsKey(key))
             cir.setReturnValue(textMap.get(key).asString());
