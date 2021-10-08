@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "me.basiqueevangelist.texttranslations.mixin",
+  "package": "me.basiqueevangelist.richlocaltextlib.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "DefaultLanguageMixin",

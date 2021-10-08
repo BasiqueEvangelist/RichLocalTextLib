@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "texttranslations",
+  "id": "richlocaltextlib",
   "version": "${version}",
-  "name": "Text Translations",
+  "name": "RichLocalTextLib",
   "description": "Allow using Texts in translations",
   "authors": [
     "BasiqueEvangelist"
   ],
   "contact": {
-    "sources": "https://github.com/BasiqueEvangelist/TextTranslations",
-    "issues": "https://github.com/BasiqueEvangelist/TextTranslations/issues"
+    "sources": "https://github.com/BasiqueEvangelist/RichLocalTextLib",
+    "issues": "https://github.com/BasiqueEvangelist/RichLocalTextLib/issues"
   },
   "license": "LGPL-3.0-only",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.basiqueevangelist.texttranslations.fabric.TextTranslationsFabric"
+      "me.basiqueevangelist.richlocaltextlib.fabric.RichLocalTextLibFabric"
     ]
   },
   "mixins": [
-    "texttranslations-common.mixins.json"
+    "richlocaltextlib-common.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.7.4",

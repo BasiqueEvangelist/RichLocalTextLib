@@ -1,7 +1,7 @@
-package me.basiqueevangelist.texttranslations.mixin;
+package me.basiqueevangelist.richlocaltextlib.mixin;
 
 import com.google.gson.*;
-import me.basiqueevangelist.texttranslations.InsertingText;
+import me.basiqueevangelist.richlocaltextlib.InsertingText;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;

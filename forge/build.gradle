@@ -13,7 +13,7 @@ architectury {
 
 loom {
     useFabricMixin = true
-    mixinConfigs = ["texttranslations-common.mixins.json"]
+    mixinConfigs = ["richlocaltextlib-common.mixins.json"]
 }
 
 dependencies {

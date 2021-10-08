@@ -1,7 +1,7 @@
-package me.basiqueevangelist.texttranslations.mixin;
+package me.basiqueevangelist.richlocaltextlib.mixin;
 
-import me.basiqueevangelist.texttranslations.access.LanguageAccess;
-import me.basiqueevangelist.texttranslations.access.TextLanguage;
+import me.basiqueevangelist.richlocaltextlib.access.LanguageAccess;
+import me.basiqueevangelist.richlocaltextlib.access.TextLanguage;
 import net.minecraft.client.resource.language.TranslationStorage;
 import net.minecraft.text.Text;
 import org.jetbrains.annotations.Nullable;

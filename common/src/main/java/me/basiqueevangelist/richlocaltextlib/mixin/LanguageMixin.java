@@ -1,8 +1,8 @@
-package me.basiqueevangelist.texttranslations.mixin;
+package me.basiqueevangelist.richlocaltextlib.mixin;
 
 import com.google.gson.JsonElement;
-import me.basiqueevangelist.texttranslations.access.DefaultLanguageAccess;
-import me.basiqueevangelist.texttranslations.access.LanguageAccess;
+import me.basiqueevangelist.richlocaltextlib.access.DefaultLanguageAccess;
+import me.basiqueevangelist.richlocaltextlib.access.LanguageAccess;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.JsonHelper;

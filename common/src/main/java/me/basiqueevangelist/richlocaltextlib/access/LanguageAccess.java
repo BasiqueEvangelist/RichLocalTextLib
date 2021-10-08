@@ -1,4 +1,4 @@
-package me.basiqueevangelist.texttranslations.access;
+package me.basiqueevangelist.richlocaltextlib.access;
 
 import net.minecraft.text.Text;
 

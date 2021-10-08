@@ -1,7 +1,7 @@
-package me.basiqueevangelist.texttranslations.mixin;
+package me.basiqueevangelist.richlocaltextlib.mixin;
 
-import me.basiqueevangelist.texttranslations.InsertingText;
-import me.basiqueevangelist.texttranslations.access.TextLanguage;
+import me.basiqueevangelist.richlocaltextlib.InsertingText;
+import me.basiqueevangelist.richlocaltextlib.access.TextLanguage;
 import net.minecraft.text.StringVisitable;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
@@ -22,7 +22,7 @@ import java.util.Optional;
 
 @Mixin(TranslatableText.class)
 public class TranslatableTextMixin {
-    @Unique private static final Logger LOGGER = LogManager.getLogger("TextTranslations");
+    @Unique private static final Logger LOGGER = LogManager.getLogger("RichLocalTextLib");
 
     @Shadow @Final private String key;
 
