@@ -2,6 +2,7 @@ modLoader = "javafml"
 loaderVersion = "[35,)"
 issueTrackerURL = "https://github.com/BasiqueEvangelist/RichLocalTextLib/issues"
 license = "LGPL-3.0-only"
+logoFile = "icon.png"
 
 [[mods]]
 modId = "richlocaltextlib"
@@ -11,7 +12,6 @@ authors = "BasiqueEvangelist"
 description = '''
 Allow using Texts in translations
 '''
-#logoFile = ""
 
 [[dependencies.richlocaltextlib]]
 modId = "forge"
