@@ -20,6 +20,13 @@
       "me.basiqueevangelist.richlocaltextlib.fabric.RichLocalTextLibFabric"
     ]
   },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/bRTMbKdmZt"
+      }
+    }
+  },
   "mixins": [
     "richlocaltextlib-common.mixins.json"
   ],
