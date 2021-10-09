@@ -8,9 +8,9 @@ logoFile = "icon.png"
 modId = "richlocaltextlib"
 version = "${version}"
 displayName = "RichLocalTextLib"
-authors = "BasiqueEvangelist"
+authors = "BasiqueEvangelist, Jetsparrow"
 description = '''
-Allow using Texts in translations
+Rich text support for translations
 '''
 
 [[dependencies.richlocaltextlib]]

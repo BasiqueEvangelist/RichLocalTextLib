@@ -3,9 +3,10 @@
   "id": "richlocaltextlib",
   "version": "${version}",
   "name": "RichLocalTextLib",
-  "description": "Allow using Texts in translations",
+  "description": "Rich text support for translations",
   "authors": [
-    "BasiqueEvangelist"
+    "BasiqueEvangelist",
+    "Jetsparrow"
   ],
   "contact": {
     "sources": "https://github.com/BasiqueEvangelist/RichLocalTextLib",
