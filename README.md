@@ -1,6 +1,6 @@
 # RichLokalТекстLib
 
-![Logo](./media/richlocal512.png)
+![Logo](./media/richlocal256.png)
 
 RichLocalText is a library that allows modders and pack-makers to use translated rich text.  
 Easily add font styles and colors anywhere without code! 
