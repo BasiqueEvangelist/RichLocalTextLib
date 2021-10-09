@@ -21,11 +21,13 @@ Example, changing the default chat text format:
 {
   "chat.type.text": 
   [
-    {"text":"A mysterious stranger known only as <", "color": "blue"},
+    "", 
+    {"text":"A mysterious stranger known only as <", "color": "gray"},
     {"index":0, "obfuscated": true},
-    {"text":"> uttered: \"", "color": "blue"},
+    {"text":"> uttered: \"", "color": "gray"},
     {"index":1},
-    {"text":"\"", "color": "blue"}
+    {"text":"\"", "color": "gray"}
   ]
 }
 ```
+**N.B.:** If your first text component is styled, all components after it will inherit its style. This is a Minecraft quirk that we are not going to fix.
