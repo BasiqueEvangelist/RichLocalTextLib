@@ -31,3 +31,7 @@ Example, changing the default chat text format:
 }
 ```
 **N.B.:** If your first text component is styled, all components after it will inherit its style. This is a Minecraft quirk that we are not going to fix.
+
+This results in text like this:  
+![screenshot of rich text](./media/chat-example.png)
+
